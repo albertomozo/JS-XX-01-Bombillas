@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Operadores</title>
+
+<style type="text/css">
+#container {
+	background-color:antiquewhite;
+	padding: 20px;
+	height: 400px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.rojo {
+	color: #F00;
+	font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>JavaScript evento onclick</h1>
+<h2>document.getElementById("id").src</h2>
+<p>En este caso JavaScript cambia atributo src de una imagen.</p>
+    
+    
+<button onclick="onof('bombilla1','btn1')" id="btn1">ON</button>
+<img id="bombilla1" src="img/bombilla-off.gif" title="Bombilla">
+<button onclick="onof('bombilla2','btn2')" id="btn2">ON</button>
+<img id="bombilla2" src="img/bombilla-off.gif" title="Bombilla">
+<button onclick="onof('bombilla3','btn3')" id="btn3">ON</button>
+<img id="bombilla3" src="img/bombilla-off.gif" title="Bombilla">
+
+
+
+<script>
+function onof(bombilla,boton) {
+    /* inicializacion datos*/
+    btnonof = document.getElementById(boton);
+    console.log(btnonof);
+    bom = document.getElementById(bombilla);
+    bomImgOn = 'img/bombilla-on.gif';
+    bomImgOf = 'img/bombilla-off.gif';
+   console.log(bomImgOf);
+    if ( btnonof.innerHTML=='ON') {
+        bom.src=bomImgOn;
+        btnonof.innerHTML = 'OF';
+        btnonof.style.border = '2px solid red';
+    } else {
+        bom.src=bomImgOf;
+        btnonof.innerHTML = 'ON';
+        btnonof.style.border = '2px solid green';
+    }
+}
+ 
+
+</script>
+
+</div>
+</body>
+</html>

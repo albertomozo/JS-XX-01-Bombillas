@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Operadores</title>
+
+<style type="text/css">
+#container {
+	background-color:antiquewhite;
+	padding: 20px;
+	height: 400px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.rojo {
+	color: #F00;
+	font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>JavaScript evento onclick</h1>
+<h2>document.getElementById("id").src</h2>
+<p>En este caso JavaScript cambia atributo src de una imagen.</p>
+    
+    
+<button onclick="document.getElementById('bombilla').src='img/bombilla-on.gif'">ON</button>
+
+<img id="bombilla" src="img/bombilla-off.gif" title="Bombilla">
+
+<button onclick="document.getElementById('bombilla').src='img/bombilla-off.gif'">OFF</button>
+
+
+</div>
+</body>
+</html>

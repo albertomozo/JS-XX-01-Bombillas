@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<title>Operadores</title>
+
+<style type="text/css">
+#container {
+	background-color:antiquewhite;
+	padding: 20px;
+	height: 400px;
+	width: 700px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.rojo {
+	color: #F00;
+	font-size: 18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+<h1>JavaScript evento onclick</h1>
+<h2>document.getElementById("id").src</h2>
+<p>En este caso JavaScript cambia atributo src de una imagen.</p>
+    
+    
+<button onclick="onoff('bombilla')" id="boton">ON</button>
+
+<img id="bombilla" src="img/bombilla-off.gif" title="Bombilla Apagada" name="off">
+
+<!-- <img id="bombilla2" src="img/bombilla-off.gif" title="Bombilla Apagada" name="off"> -->
+
+<script>
+    function onoff(iden){
+        console.log(`iden  : ${iden}`);
+        // iden = 'bombilla';
+        capa =document.getElementById(iden);
+
+        imagen2 = document.getElementById(iden).getAttribute('src');
+        console.log (imagen2);
+        Name = document.getElementById(iden).getAttribute('name');
+        console.log (Name);
+        /* console.log (document.getElementById("bombilla").src.split("/"));
+        imagen = capa.src.split("/").pop().split(".")[0]; 
+        console.log(imagen);*/
+        //if (imagen == 'bombilla-off'){
+        if (document.getElementById('boton').innerHTML=='ON') {   
+        //if (imagen2 == 'img/bombilla-off.gif'){   
+            document.getElementById(iden).src="img/bombilla-on.gif";
+            document.getElementById(iden).name="on";
+            document.getElementById(iden).title="Bombilla encendida";
+            document.getElementById('boton').innerHTML="OFF";
+            document.getElementById('boton').className='encendida'; 
+           
+        } else {
+            document.getElementById(iden).src="img/bombilla-off.gif";
+            document.getElementById(iden).name="off";
+            document.getElementById(iden).title="Bombilla Apagada";
+            document.getElementById('boton').innerHTML="ON";
+            document.getElementById('boton').className='apagada';
+        }
+
+    }
+</script>
+
+</div>
+</body>
+</html>

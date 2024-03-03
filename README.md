@@ -5,7 +5,19 @@ Desde el más básico cambio de imagen en el evento onclick de un boton, hasta a
 
 En definitiva un repaso a las funcionalidades de JS sobre el mismo ejercicio.
 
-# 
+En estos momentos tenemos las siguientes versiones
+-Versión basica
+-Versión SVG
+-Personalizacion color, trazo, tamaño
+-Crear copias
+-Bombillas Intermitente
+
+
+
+# 💡
 
 <span>![</span><span>Gif animado Bombilla intermitente</span><span>]</span><span>(</span><span>https://raw.githubusercontent.com/albertomozo/JS-XX-01-Bombillas/main/img/js_bomb_intermitente.gif</span><span>)</span>
+
+# 
+
 © 2024  Alberto Mozo

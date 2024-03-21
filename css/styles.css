@@ -1,0 +1,25 @@
+#myButton,#myButton2 {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#myButton:hover {
+    background-color: #45a049;
+}
+
+#myButton2:hover {
+    background-color: #943665;
+}
+#myButton2 {
+    background-color: red;
+}
+
+#parteDos{
+    display:none;
+}
+#parteTres{
+    display:none;
+}
